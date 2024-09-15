@@ -5,18 +5,18 @@ function checkForSpam(message) {
   
   const low = message.toLowerCase();
 
-  if (low.includs(spam) || low.includs(sale)) {
+  if (low.includes("spam") || low.includes("sale")) {
     return true; 
 }
   else {
     return false;
   }
 }
-console.log(low("Latest technology news")); 
-console.log(low("JavaScript weekly newsletter")); 
-console.log(low("Get best sale offers now!")); 
-console.log(low("Amazing SalE, only tonight!")); 
-console.log(low("Trust me, this is not a spam message")); 
-console.log(low("Get rid of sPaM emails. Our book in on sale!")); 
-console.log(low("[SPAM] How to earn fast money?"));
+console.log(checkForSpam("Latest technology news")); 
+console.log(checkForSpam("JavaScript weekly newsletter")); 
+console.log(checkForSpam("Get best sale offers now!")); 
+console.log(checkForSpam("Amazing SalE, only tonight!")); 
+console.log(checkForSpam("Trust me, this is not a spam message")); 
+console.log(checkForSpam("Get rid of sPaM emails. Our book in on sale!")); 
+console.log(checkForSpam("[SPAM] How to earn fast money?"));
 
